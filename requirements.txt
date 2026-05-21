@@ -1,0 +1,16 @@
+# MMCVRPTW-MLT V4 — pinned exactly per spec §6.
+# Pinning the highspy version is a deliberate anti-shortcut guardrail:
+# the V3 build was written against the 1.7.x addCols / addRow signatures,
+# a fresh install pulled 1.14.0, the signatures had changed, and the
+# solver crashed before solving. Test S5 enforces this pin.
+fastapi==0.115.0
+uvicorn[standard]==0.32.0
+pandas==2.2.3
+openpyxl==3.1.5
+highspy==1.7.2
+pydantic==2.9.0
+numpy==1.26.4
+sse-starlette==2.1.3
+python-multipart==0.0.12
+pytest==8.3.3
+pytest-forked==1.6.0
